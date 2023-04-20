@@ -1,0 +1,19 @@
+This analysis is nothing but a simple map-reduce on Hadoop that analyses data from Twitter.
+To execute this project on windows system, WSL(Windows Subsystem for Linux)2 is required and then Ubuntu 20.04 or 22.04 LTS.
+
+
+Problem Description:
+The dataset used for analyses is real data from Twitter from 2010. The dataset represents a graph that contains links between tweeting users in the form: userID,followerID.
+
+For eg:
+
+7,5
+7,8
+8,9
+
+Here user 5,8 are follower of user 7, whereas user 9 is a follower of 8. Now, for each twitter user we should count no.of followers and group them by their count.
+
+
+For Eg:
+
+5 6 : This says there are 6 users who follow 5 users. Solve this problem using two map-reduce jobs on Hadoop in java programming language.
